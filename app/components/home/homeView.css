@@ -1,0 +1,123 @@
+.carousel {
+    margin: 10px;
+    min-height: 100px;
+    padding: 5px 120px;
+}
+
+.inner-carousel {
+    min-height: 100px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide > img {
+    height: 300px;
+    width: 500px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.active {
+  background-color: #717171;
+  height: 11px;
+  width: 11px;
+}
+
+.categories {
+    display: inline-block;
+    margin: 2em 3em 0em 2em;
+    padding: 0em 1em;
+    vertical-align: top;
+}
+
+li > a {
+    color: black;
+}
+
+.nestedTopics {
+    margin-left: 1em; 
+}
+
+#quizCardContainer {
+    padding: 2em 3em;
+    width: 55em;
+    display: inline-block;
+}
+
+.quizCard {
+    height: 20em;
+    width: 15em;
+    display: inline-block;
+    margin: 1em 1em;
+    position: relative;
+}
+
+.quizCard:hover {
+    cursor: pointer;
+}
+
+.quizImage {
+    height: 12em;
+    width: 15em;
+}
+
+.quizInfo {
+    padding: 1em;
+}
+
+.quizTitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.homeImage {
+    height: 100%;
+    width: 100%;
+}
+
+#emailForm {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1em 2em;
+}
+
+label {
+    display: block;
+}
+
+input {
+    border-radius: 2px;
+    margin-bottom: 1em;
+    height: 2em;
+    width: 20em;
+}
+
+#emailListBtn {
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    height: 2em;
+    width: 4em;
+    border-radius: 5px;
+}
+
+#emailListBtn:hover {
+    cursor: pointer;
+    background-color: #08C708;
+}
+

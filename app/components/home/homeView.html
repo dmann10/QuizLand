@@ -1,0 +1,145 @@
+<h1>Welcome to Quiz World {{username}}!</h1>
+<p>A place to test your knowledge on the things you love 
+    by completing quizzes created by other enthusiasts!<br> Create, share 
+    and learn about any topic you can think of! <br>Welcome to Quiz World.</p>
+
+<div class="container" ng-init="load()">
+    <div class="carousel">
+        <h2>Featured Quizzes</h2>
+        <div class="inner-carousel">
+            <div class="slide">
+                <img src="http://www.wnd.com/files/2014/05/constitution.jpg"/>
+                <h3>American History</h3>
+            </div>
+            <div class="slide">
+                <img src="https://www.strose.edu/wp-content/themes/lima/images/logo-print.png"/>
+                <h3>Saint Rose Trivia</h3>
+            </div>
+            <div class="slide">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61sE7KPu%2BNL._SL500_AC_SS350_.jpg"/>
+                <h3>Geography of Westeros</h3>
+            </div>
+            <div style="text-align:center">
+                <span class="dot active"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+        </div>    
+    </div>    
+</div>
+
+<div class="container">
+    <div class="categories">
+        <h3>Menu</h3>
+        <ul>
+            <li><a href="#">Academic</a>
+                <ul class="nestedTopics">
+                    <li>Math</li>
+                    <li>Science</li>
+                    <li>History</li>
+                    <li>Literature</li>
+                    <li>Other</li>
+                </ul>
+            </li>
+            <li><a href="#">Pop Culture</a>
+                <ul class="nestedTopics">
+                    <li>Music</li>
+                    <li>Movies</li>
+                    <li>Other</li>
+                </ul>
+            </li>
+            <li><a href="#">Sports</a>
+                <ul class="nestedTopics">
+                    <li>Baseball</li>
+                    <li>Football</li>
+                    <li>Basketball</li>
+                    <li>Golf</li>
+                    <li>Other</li>
+                </ul>
+            </li>
+            <li><a href="#">Miscellaneous</a></li>
+        </ul>
+    </div>
+    <div id="quizCardContainer">
+        <div class="quizCard">
+            <div class="quizImage">
+                <img class="homeImage" src="https://www.strose.edu/wp-content/themes/lima/images/logo-print.png">
+            </div>
+            <div class="quizInfo">
+                <p class="quizTitle">Saint Rose Trivia</p>
+                <p>By: PrezzStefanco</p>
+                <p>Difficulty: Easy</p>
+                <p>10 Questions</p>
+            </div> 
+        </div>
+        <div class="quizCard">
+            <div class="quizImage">
+            <img class="homeImage" src="http://www.wnd.com/files/2014/05/constitution.jpg">
+            </div>
+            <div class="quizInfo">
+                <p class="quizTitle">American History</p>
+                <p>By: gddrgdd23</p>
+                <p>Difficulty: Expert</p>
+                <p>15 Questions</p>
+            </div>
+        </div>
+        <div class="quizCard">
+            <div class="quizImage">
+                <img class="homeImage" src="http://users.wpi.edu/~jta/images/sigma.jpg">
+            </div>
+            <div class="quizInfo">
+                <p class="quizTitle">Algebra 2</p>
+                <p>By: math_geek314</p>
+                <p>Difficulty: Medium</p>
+                <p>20 Questions</p>
+            </div>                
+        </div>
+        <div class="quizCard">
+            <div class="quizImage">
+                <img class="homeImage" src="https://images-na.ssl-images-amazon.com/images/I/61sE7KPu%2BNL._SL500_AC_SS350_.jpg">
+            </div>
+            <div class="quizInfo">
+                <p class="quizTitle">Geography of Westeros</p>
+                <p>By: GoTFreak1</p>
+                <p>Difficulty: Hard</p>
+                <p>10 Questions</p>
+            </div>        
+        </div>
+        <div class="quizCard">
+            <div class="quizImage">
+                <img class="homeImage" src="http://i.imgur.com/iz1fPcf.png">
+            </div>
+            <div class="quizInfo">
+                <p class="quizTitle">13th century Sweden</p>
+                <p>By: glywnRugdy54</p>
+                <p>Difficulty: Extreme</p>
+                <p>25 Questions</p>
+            </div>                
+        </div>
+        <div class="quizCard">
+            <div class="quizImage">
+                <img class="homeImage" src="http://cdn.kickvick.com/wp-content/uploads/2015/09/cutest-bunny-rabbits-23.jpg">
+            </div>
+            <div class="quizInfo">
+                <p class="quizTitle">Are these bunnies cute?</p>
+                <p>By: DeathMetalEnthusiast666</p>
+                <p>Difficulty: Easy</p>
+                <p>5 Questions</p>
+            </div>                
+        </div>
+
+        <div class="container" id="emailForm">
+            <h3>Sign up to our mail list for updates on the site</h3>
+            <br>
+            <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                <label name="name">Name:</label>
+                <input type="text" name="name" class="mailInfo" placeholder="Name"></input>
+                <br>
+                <label name="name">Email:</label>
+                <input type="text" name="email" class="mailInfo" placeholder="Email"></input>
+                <br>
+                <input type="submit" value="submit" class="btn" id="emailListBtn"></div>
+            </form>
+        </div>
+    </div>
+</div>

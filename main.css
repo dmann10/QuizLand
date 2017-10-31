@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FBFBFB;
+}
+
+/* Header */
+.header {
+    padding: 1em;
+}
+
+#logo {
+    color: white;
+    display: inline-block;
+}
+
+/* NavBar Menu */
+.menu {
+    float: right;
+}
+
+.menu li {
+    display: inline;
+    padding-right: 2em;
+    padding-bottom: 5px;
+}
+
+.menu a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer{
+    position: relative;
+    padding: .5em;
+    text-align: center;
+    color: white;
+}
+
+.header, .footer {
+    background-color: grey;
+}
+
+.main { 
+    margin: 0 auto;
+    padding: 1.5em 4em;
+}
+
+/* Pop Up */
+.pop-up {
+    width: 50%;
+    height: 80%;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color: #FBFBFB;
+    text-align: center;
+    position: fixed;
+    z-index:1000;
+    bottom: 10%;
+    left: 25%;
+    box-shadow: 10px 10px 5px #888888;
+    padding: 10px 20px;
+    display: none;
+}
+
+.pop-up > h1 {
+    display: inline-block;
+}
+
+.pop-up > span {
+    float: right;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.pop-up > span:hover {
+    color: red;
+    padding-bottom: 5px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+#forrest {
+    margin:0 auto;
+    display: block;
+    margin-top: 30px
+}

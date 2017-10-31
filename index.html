@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Final Project</title>
+
+        <link type="text/css" rel="stylesheet" href="main.css">
+        <link type="text/css" rel="stylesheet" href="app/components/home/homeView.css">
+        <link type="text/css" rel="stylesheet" href="app/components/userProfile/profile.css">
+        <link type="text/css" rel="stylesheet" href="app/components/quizForm/quizForm.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body ng-controller="MainController">
+
+        <div class="header" ng-init="load()">
+            <h1 id="logo">Quiz World</h1>
+            <ul class="menu">
+                <li><a href="#!/">Home</a></li>
+                <li><a href="#!/create">Create a Quiz</a></li>
+                <li><a href="#!/user">My Quizzes</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="container">
+
+                <div ng-view></div>
+
+                <!-- Pop Up -->
+                <div class="pop-up">
+                    <h1>HELLO!</h1>
+                    <span ng-click="clearPopUp()">x</span>
+                    <a href="http://reactiongifs.com/?p=23490" id="forrest">
+                        <img src="http://www.reactiongifs.com/r/fgwv.gif">
+                    </a>
+                </div>
+            
+            </div>
+        </div>
+    
+        <div class="footer">
+            <h3>Luke, I am your footer!</h3>
+        </div>
+
+        <!-- Modules -->
+        <script src="app/app.module.js"></script>
+        <script src="app/app.routes.js"></script>
+
+        <!-- Controllers -->
+        <script src="index.js"></script>
+        <script src="app/components/home/HomeController.js"></script>
+        <script src="app/components/quizForm/QuizFormController.js"></script>
+        <script src="app/components/userProfile/UserProfileController.js"></script>
+        
+        <!-- Services -->
+
+
+    </body>
+</html>
