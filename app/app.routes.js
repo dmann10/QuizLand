@@ -13,6 +13,10 @@ angular.module('myApp')
                 controller: 'UserProfileController',
                 templateUrl: 'app/components/userProfile/userProfile.html'
             })
+            .when('/quiz', {
+                controller: 'QuizRoomController',
+                templateUrl: 'app/components/quizRoom/quizRoom.html'
+            })
             .otherwise({
                 redirectTo: '/'
             });

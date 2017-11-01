@@ -1,0 +1,61 @@
+#profileForm > input {
+    margin-top: 10px;
+}
+
+#username {
+    height: 2em;
+    width: 20em;
+}
+
+#profileForm > label {
+    margin-top: 10px;
+}
+
+.checkboxContainer {
+    padding: 10px
+}
+
+.ckBoxCol {
+    display: inline-block;
+    width: 200px;
+}
+
+.interestCkBox {
+   margin-top: 10px;
+   margin-right: 10px;
+   height: 15px;
+   width: 15px;
+}
+
+.profileSubmit {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.profilePreview {
+    width: 50%;
+    height: 80%;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color: #FBFBFB;
+    position: fixed;
+    z-index:1000;
+    bottom: 10%;
+    left: 25%;
+    box-shadow: 10px 10px 5px #888888;
+    padding: 10px 20px;
+    display: none;
+}
+
+.profilePreview > span {
+    float: right;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.profilePreview > span:hover {
+    color: red;
+    padding-bottom: 5px;
+    font-size: 26px;
+    cursor: pointer;
+}

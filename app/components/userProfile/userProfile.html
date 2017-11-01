@@ -1,1 +1,72 @@
-<p>Profile Works!</p>
+<div class="container">
+    <h2>Create your Profile</h2>
+    <form id="profileForm">
+        <input type="text" placeholder="Username" id="username" ng-model="userProfile.username"></input><br>
+        <input type="radio" name="gender" value ="Male">Male</input>
+        <input type="radio" name="gender" value="Female">Female</input>
+        <label>Pick a Team:</label>
+        <select ng-model="userProfile.team"> 
+            <option value=""></option>
+            <option value="Red">Red Team</option>
+            <option value="Blue">Blue Team</option>
+            <option value="Yellow">Yellow Team</option>
+        </select>
+        <label>Pick an area of expertise:</label>
+        <select ng-model="userProfile.expertise">
+            <option value=""></option>
+            <option value="Academics">Academics</option>
+            <option value="Movies">Movies</option>
+            <option value="TV">TV</option>
+            <option value="Music">Music</option>
+            <option value="Pop Culture">Pop Culture</option>
+            <option value="Master of All Trades">Master of All Trades</option>
+        </select>
+        <br>
+        <h3>What are your interests?</h3>
+        <div class="checkboxContainer">
+            <div class="ckBoxCol">
+                <input type="checkbox" class="interestCkBox" name="interests" value="Animals">Animals</input><br>
+                <input type="checkbox" class="interestCkBox" name="interests" value="Art">Art</input><br>
+                <input type="checkbox" class="interestCkBox" name="interests" value="Cars">Cars</input><br>
+                <input type="checkbox" class="interestCkBox" name="interests" value="Celebrities">Celebrities</input>
+            </div>
+            <div class="ckBoxCol">
+                <input type="checkbox" class="interestCkBox" name="interests" value="Fashion">Fashion</input><br>
+                <input type="checkbox" class="interestCkBox" name="interests" value="Fitness">Fitness</input><br>
+                <input type="checkbox" class="interestCkBox" name="interests" value="Food">Food</input><br>
+                <input type="checkbox" class="interestCkBox" name="interests" value="Geography">Geography</input>
+            </div>
+            <div class="ckBoxCol">
+                <input type="checkbox" class="interestCkBox" name="interests" value="Literature">Literature</input><br>
+                <input type="checkbox" class="interestCkBox" name="interests" value="Movies">Movies</input><br>
+                <input type="checkbox" class="interestCkBox" name="interests" value="Music">Music</input><br>
+                <input type="checkbox" class="interestCkBox" name="interests" value="Outdoors">Outdoors</input>
+            </div>
+            <div class="ckBoxCol">
+                <input type="checkbox" class="interestCkBox" name="interests" value="Politics">Politics</input><br>
+                <input type="checkbox" class="interestCkBox" name="interests" value="Religion">Religion</input><br>
+                <input type="checkbox" class="interestCkBox" name="interests" value="Science">Science</input><br>
+                <input type="checkbox" class="interestCkBox" name="interests" value="Sports">Sports</input>
+            </div>
+            <div class="ckBoxCol">
+                    <input type="checkbox" class="interestCkBox" name="interests" value="Technology">Technology</input><br>
+                <input type="checkbox" class="interestCkBox" name="interests" value="Travel">Travel</input><br>
+                <input type="checkbox" class="interestCkBox" name="interests" value="TV">TV</input><br>
+                <input type="checkbox" class="interestCkBox" name="interests" value="Video Games">Video Games</input>     
+            </div>
+        </div>
+        <button type="submit" class="profileSubmit" ng-click="submitProfile()">Submit</button>
+    </form>
+
+    <div class="profilePreview">
+        <span ng-click="clearPreview()">x</span>
+        <h3>{{userProfile.username}}</h3>
+        <p>Gender: {{userProfile.gender}}</p>
+        <p>Team: {{userProfile.team}}</p>
+        <p>Expertise: {{userProfile.expertise}}</p>
+        <h4 style="text-decoration:underline">Interests</h4>
+        <ul>
+            <li style="margin-left: 10pxs" ng-repeat="interest in userProfile.interests">{{interest}}</li>
+        </ul>
+    </div>
+</div>

@@ -24,6 +24,8 @@ angular.module('myApp')
 		    setTimeout(showSlides, 5000);
 		}
 
-
+		$scope.takeQuiz = function() {
+			window.location.href = '#!/quiz';
+		};
 
 }]);

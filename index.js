@@ -5,7 +5,7 @@ angular.module('myApp')
         $scope.load = function() {
             setTimeout(function () {
                 $('.pop-up').css('display', 'block');
-            }, 5000);
+            }, 3000);
         }   
 
         $scope.clearPopUp = function () {

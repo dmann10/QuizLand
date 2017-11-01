@@ -1,3 +1,4 @@
+/* Carousel */
 .carousel {
     margin: 10px;
     min-height: 100px;
@@ -29,12 +30,12 @@
   transition: background-color 0.6s ease;
 }
 
-
 .active {
   background-color: #717171;
   height: 11px;
   width: 11px;
 }
+
 
 .categories {
     display: inline-block;
@@ -52,9 +53,10 @@ li > a {
 }
 
 #quizCardContainer {
-    padding: 2em 3em;
-    width: 55em;
+    padding: 3em 2em;
+    width: 57em;
     display: inline-block;
+    margin: 0 auto;
 }
 
 .quizCard {
@@ -62,11 +64,16 @@ li > a {
     width: 15em;
     display: inline-block;
     margin: 1em 1em;
+    padding: 10px;
     position: relative;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 7px 15px #88887F;
 }
 
 .quizCard:hover {
     cursor: pointer;
+    box-shadow: 5px 7px 15px #888888;
 }
 
 .quizImage {
@@ -98,7 +105,7 @@ label {
     display: block;
 }
 
-input {
+.mailInfo {
     border-radius: 2px;
     margin-bottom: 1em;
     height: 2em;
