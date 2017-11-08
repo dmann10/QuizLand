@@ -1,0 +1,74 @@
+.numberSortForm > input {
+	margin: 5px 0px 10px 0px;
+	height: 2em;
+    width: 20em;
+}
+
+.calculator {
+	min-height: 250px;
+	padding: 15px;
+	border: 1px solid black;
+	border-radius: 20px;
+	display: inline-block;
+	margin-top: 30px;
+	background-color: lightblue;
+}
+
+.innerContainer {
+	text-align: center;
+}
+
+.buttonPad {
+	text-align: right;
+}
+
+.btn {
+	width: 40px;
+	height: 40px;
+	margin: 10px 10px;
+}
+
+#displayField {
+	height: 40px;
+	width: 250px;
+	text-align: right;
+	font-family: courier;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#submit {
+	width: 112px;
+	float: right;
+}
+
+#left, #right {
+	display: inline-block;
+}
+
+#left {
+	margin-right: 20px;
+}
+
+#right {
+	vertical-align: top;
+	margin-left: 20px;
+}
+
+#right > img {
+	height: 350px;
+	width: 350px;
+}
+
+div.snitch {
+	width: 100px;
+	height: 100px;
+ 	background-color: none;
+	position: absolute;
+	cursor: pointer;
+}
+
+.snitch > img {
+	height: 100%;
+	width: 100%;
+}

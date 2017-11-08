@@ -1,6 +1,15 @@
 angular.module('myApp')
     .controller('MainController', ['$scope', function($scope) {
 
+        // Dropdown
+        $scope.toggleDropdown = function() {
+            if($('.dropdown').is(':hidden')) {
+                $('.dropdown').slideDown('slow');
+            } else {
+                $('.dropdown').slideUp('slow');
+            }
+        }
+
         // Pop Up
         $scope.load = function() {
             setTimeout(function () {

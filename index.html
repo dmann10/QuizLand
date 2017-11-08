@@ -8,18 +8,27 @@
         <link type="text/css" rel="stylesheet" href="app/components/userProfile/profile.css">
         <link type="text/css" rel="stylesheet" href="app/components/quizForm/quizForm.css">
         <link type="text/css" rel="stylesheet" href="app/components/quizRoom/quizRoom.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="app/components/tools/tools.css">        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
-    <body ng-controller="MainController"  ng-init="load()">
+    <body ng-controller="MainController" ng-init="load()">
 
         <div class="header">
             <h1 id="logo">Quiz World</h1>
             <ul class="menu">
                 <li><a href="#!/">Home</a></li>
                 <li><a href="#!/create">Create a Quiz</a></li>
-                <li><a href="#!/user">Profile</a></li>
+                <li>
+                    <button class="dropdownBtn" ng-click="toggleDropdown()">Profile
+                        <i class="fa fa-caret-down" aria-hidden="true" style="margin-left:10px;color:white"></i>
+                    </button>
+                </li>
+                <div class="dropdown">
+                    <a href="#!/user">My Profile</a>
+                    <a href="#!/tools">Tools & Games</a>
+                </div>
             </ul>
         </div>
 
@@ -54,6 +63,7 @@
         <script src="app/components/quizForm/QuizFormController.js"></script>
         <script src="app/components/userProfile/UserProfileController.js"></script>
         <script src="app/components/quizRoom/QuizRoomController.js"></script>
+        <script src="app/components/tools/ToolsController.js"></script>
         
         <!-- Services -->
 
