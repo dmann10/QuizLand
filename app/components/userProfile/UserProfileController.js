@@ -28,7 +28,7 @@ angular.module('myApp')
 
         // XML Request //
         var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("GET", "../assets/customers.xml", false);
+        xmlhttp.open("GET", "assets/users.xml", false);
         xmlhttp.send();
         var xmlDoc = xmlhttp.responseXML;
 
