@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<USERS>
+    <User>
+        <UserID>1230</UserID>
+        <Username>PrezzStefanco</Username>
+        <Gender>Female</Gender>
+        <Team>Yellow</Team>
+        <Expertise>Academics</Expertise>
+    </User>
+    <User>
+        <UserID>1231</UserID>
+        <Username>gddrgdd23</Username>
+        <Gender>Male</Gender>
+        <Team>Red</Team>
+        <Expertise>Academics</Expertise>
+    </User>
+    <User>
+        <UserID>1232</UserID>
+        <Username>math_geek314</Username>
+        <Gender>Male</Gender>
+        <Team>Red</Team>
+        <Expertise>Movies</Expertise>
+    </User>
+    <User>
+        <UserID>1233</UserID>
+        <Username>GoTFreak1</Username>
+        <Gender>Male</Gender>
+        <Team>Blue</Team>
+        <Expertise>TV</Expertise>
+    </User>
+    <User>
+        <UserID>1234</UserID>
+        <Username>glywnRugdy54</Username>
+        <Gender>Female</Gender>
+        <Team>Blue</Team>
+        <Expertise>Master of All Trades</Expertise>
+    </User>
+    <User>
+        <UserID>1235</UserID>
+        <Username>DeathMetalEnthusiast666</Username>
+        <Gender>Female</Gender>
+        <Team>Red</Team>
+        <Expertise>Music</Expertise>
+    </User>
+</USERS>

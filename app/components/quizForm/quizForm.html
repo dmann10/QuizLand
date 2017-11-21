@@ -1,1 +1,29 @@
-<p>Create a Quiz</p>
+<h1>Create Your Own Quiz</h1>
+<p>Welcome to the quiz builder studio, here you can create any quiz your brain
+    can conceive! Give it a name and image, set the difficulty and start building your
+    questions. 
+</p>
+
+<form class="quizSettings">
+    <label>Quiz Title:</label>
+    <input type="text" ng-model="quiz.quizName"></input>
+    <label>Your Creator Tagname:</label>
+    <input type="text" ng-model="quiz.tagName"></input>
+    <label>Difficulty:</label>
+    <select class="difficultySelect" ng-model="quiz.difficulty">
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+        <option value="Expert">Expert</option>
+        <option value="Extreme">Extreme</option>
+    </select>
+    <span style="display:inline">
+        <label>Quiz Type:</label>
+        <select class="quizType" ng-model="quiz.type">
+            <option value="Academic">Academics</option>
+            <option value="Pop Culture">Pop Culture</option>
+            <option value="Sports">Sports</option>
+            <option value="Miscellaneous">Other</option>
+        </select>
+    </span>
+</form>

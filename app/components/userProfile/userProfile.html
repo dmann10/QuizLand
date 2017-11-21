@@ -58,6 +58,10 @@
         <button type="submit" class="profileSubmit" ng-click="submitProfile()">Submit</button>
     </form>
 
+    <input type="text" id="userSearchBar" placeholder="Search for a User" style="height:25px;margin-top:10px;"></input>
+    <button type"button" ng-click="searchUsers()" style="height:30px;width:50px">Search</button>
+    <div id="display" ng-init="getUsers()" style="margin-top:20px;"></div>
+
     <div class="profilePreview">
         <span ng-click="clearPreview()">x</span>
         <h3>{{userProfile.username}}</h3>
